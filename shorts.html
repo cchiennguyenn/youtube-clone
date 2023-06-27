@@ -1,0 +1,367 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube + </title>
+    <link rel="stylesheet" href="/shorts.css">
+    <link rel="shortcut icon" href="/images/youtubelogoonly.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+</head>
+
+<body>
+
+    <!--Menu & Logo bên trái-->
+    <nav class="flex-div">
+        <div class="nav-trai flex-div">
+            <img src="/images/list.png" class="menu-icon">
+            <img src="/images/Logo.png" class="logo">
+        </div>
+        <!--Thanh tìm kiếm & nút tìm kiếm & mic ở giữa-->
+        <div class="nav-giua flex-div">
+            <div class="search-box flex-div">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm">
+                <img src="/images/search.png">
+            </div>
+            <img src="/images/voice-search.png" class="mic-icon" id="micIcon">
+        </div>
+        <!--tạo & thông báo & tài khoản bên phải-->
+        <div class="nav-phai flex-div">
+            <img src="/images/upload.png" alt="">
+            <img src="/images/more.png" alt="">
+            <img src="/images/notification.png" alt="">
+            <a href="sign_in.html"><button type="submit"><i class="bi bi-person-circle"></i> Đăng nhập</button></a>
+        </div>
+    </nav>
+    <!-- thanh menu -->
+    <div class="sidebar">
+        <div class="shortcut-link">
+            <a href="/index.html"><img src="/images/home.png">
+                <p>Trang chủ</p>
+            </a>
+            <a href="/shorts.html"><img src="/images/shorts.png">
+                <p>Shorts</p>
+            </a>
+            <a href=""><img src="/images/subscriprion.png">
+                <p>Kênh đăng ký</p>
+            </a>
+            <a href="music.html"><img src="/images/3222736.png">
+                <p>YouTube Music</p>
+            </a>
+            <a href="/lichsu.html"><img src="/images/history.png">
+                <p>Đã xem</p>
+            </a>
+            <a href=""><img src="/images/playlist.png">
+                <p>Danh sách phát</p>
+            </a>
+            <a href=""><img src="/images/messages.png">
+                <p>Tin nhắn</p>
+            </a>
+            <a href=""><img src="/images/show-more.png">
+                <p>Xem thêm</p>
+            </a>
+        </div>
+        <hr noshade>
+        <div id="sign-up">
+            <p>Hãy đăng nhập để thích video, bình luận và đăng ký kênh.</p>
+            <a href="sign_in.html"><button type="submit"><i class="bi bi-person-circle"></i> Đăng nhập</button></a>
+        </div>
+        <hr noshade class="s-u">
+        <div class="service-dichvu">
+            <h3>Dịch vụ khác của YouTube</h3>
+            <a href="#"><img src="/images/youtube_sidebarpmu.png" alt="Premium">
+                <p>YouTube Premium</p>
+            </a>
+            <a href="#"><img src="/images/youtube_studio.png" alt="Studio">
+                <p>YouTube Studio</p>
+            </a>
+            <a href="#"><img src="/images/youtube_music.png" alt="Music">
+                <p>YouTube Music</p>
+            </a>
+            <a href="#"><img src="/images/youtube-kids.png" alt="Kids">
+                <p>YouTube Kids</p>
+            </a>
+        </div>
+    </div>
+    <!--short-->
+    <div class="container">
+        <div class="stories-container">
+            <div class="content">
+
+                <div class="container-like">
+                    <div class="stories">
+                        <a href="" class="short-video"><iframe src="https://youtube.com/embed/cxRaeRsTJeM?feature=share"
+                                frameborder="0" height="640" width="350"></iframe></a>
+                        <div class="short-icon">
+
+                            <span><i class="fa-regular fa-thumbs-up" onclick="like()" id="like"></i></span>
+                            <p>6 N</p>
+
+
+                            <span><i class="fa-regular fa-thumbs-up fa-rotate-180" onclick="dislike()"
+                                    id="dislike"></i></span>
+                            <p>Không <br>thích</p>
+
+
+                            <span><img src="/images/messages.png" alt=""></span>
+                            <p>201</p>
+
+
+                            <span><img src="/images/share.png" alt=""></span>
+                            <p>Chia sẻ</p>
+
+                            <span><i class="fa-solid fa-ellipsis"></i></span>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-like">
+                    <div class="stories">
+                        <a href="" class="short-video"><iframe src="https://youtube.com/embed/K9xICR2cApM?feature=share"
+                                frameborder="0" height="640" width="350"></iframe></a>
+                        <div class="short-icon">
+
+                            <span><i class="fa-regular fa-thumbs-up" onclick="like2()" id="like2"></i></span>
+                            <p>6 N</p>
+
+
+                            <span><i class="fa-regular fa-thumbs-up fa-rotate-180" onclick="dislike2()"
+                                    id="dislike2"></i></span>
+                            <p>Không <br>thích</p>
+
+
+                            <span><img src="/images/messages.png" alt=""></span>
+                            <p>201</p>
+
+
+                            <span><img src="/images/share.png" alt=""></span>
+                            <p>Chia sẻ</p>
+
+                            <span><i class="fa-solid fa-ellipsis"></i></span>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stories">
+                    <a href="" class="short-video"><iframe src="https://youtube.com/embed/XpD239tqMI0?feature=share"
+                            frameborder="0" height="640" width="350"></iframe></a>
+                    <div class="short-icon">
+
+                        <span><i class="fa-regular fa-thumbs-up" onclick="like3()" id="like3"></i></span>
+                        <p>6 N</p>
+
+
+                        <span><i class="fa-regular fa-thumbs-up fa-rotate-180" onclick="dislike3()"
+                                id="dislike3"></i></span>
+                        <p>Không <br>thích</p>
+
+
+                        <span><img src="/images/messages.png" alt=""></span>
+                        <p>201</p>
+
+
+                        <span><img src="/images/share.png" alt=""></span>
+                        <p>Chia sẻ</p>
+
+                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="stories">
+                    <a href="" class="short-video"><iframe src="https://youtube.com/embed/T_DPCfD4c8I?feature=share"
+                            frameborder="0" height="640" width="350"></iframe></a>
+                    <div class="short-icon">
+
+                        <span><i class="fa-regular fa-thumbs-up" onclick="like4()" id="like4"></i></span>
+                        <p>6 N</p>
+
+
+                        <span><i class="fa-regular fa-thumbs-up fa-rotate-180" onclick="dislike4()"
+                                id="dislike4"></i></span>
+                        <p>Không <br>thích</p>
+
+
+                        <span><img src="/images/messages.png" alt=""></span>
+                        <p>201</p>
+
+
+                        <span><img src="/images/share.png" alt=""></span>
+                        <p>Chia sẻ</p>
+
+                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="stories">
+                    <a href="" class="short-video"><iframe src="https://youtube.com/embed/ic47nLrmYA8?feature=share"
+                            frameborder="0" height="640" width="350"></iframe></a>
+                    <div class="short-icon">
+
+                        <span><i class="fa-regular fa-thumbs-up" onclick="like5()" id="like5"></i></span>
+                        <p>6 N</p>
+
+
+                        <span><i class="fa-regular fa-thumbs-up fa-rotate-180" onclick="dislike5()"
+                                id="dislike5"></i></span>
+                        <p>Không <br>thích</p>
+
+
+                        <span><img src="/images/messages.png" alt=""></span>
+                        <p>201</p>
+
+
+                        <span><img src="/images/share.png" alt=""></span>
+                        <p>Chia sẻ</p>
+
+                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="stories">
+                    <a href="" class="short-video"><iframe src="https://youtube.com/embed/nkJW_AU-cnw?feature=share"
+                            frameborder="0" height="640" width="350"></iframe></a>
+                    <div class="short-icon">
+
+                        <span><i class="fa-regular fa-thumbs-up" onclick="like6()" id="like6"></i></span>
+                        <p>6 N</p>
+
+
+                        <span><i class="fa-regular fa-thumbs-up fa-rotate-180" onclick="dislike6()"
+                                id="dislike6"></i></span>
+                        <p>Không <br>thích</p>
+
+
+                        <span><img src="/images/messages.png" alt=""></span>
+                        <p>201</p>
+
+
+                        <span><img src="/images/share.png" alt=""></span>
+                        <p>Chia sẻ</p>
+
+                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="stories">
+                    <a href="" class="short-video"><iframe src="https://youtube.com/embed/PMWYX6OVabk?feature=share"
+                            frameborder="0" height="640" width="350"></iframe></a>
+                    <div class="short-icon">
+
+                        <span><i class="fa-regular fa-thumbs-up" onclick="like7()" id="like7"></i></span>
+                        <p>6 N</p>
+
+
+                        <span><i class="fa-regular fa-thumbs-up fa-rotate-180" onclick="dislike7()"
+                                id="dislike7"></i></span>
+                        <p>Không <br>thích</p>
+
+
+                        <span><img src="/images/messages.png" alt=""></span>
+                        <p>201</p>
+
+
+                        <span><img src="/images/share.png" alt=""></span>
+                        <p>Chia sẻ</p>
+
+                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="stories">
+                    <a href="" class="short-video"><iframe src="https://youtube.com/embed/qsngtVA3SnM?feature=share"
+                            frameborder="0" height="640" width="350"></iframe></a>
+                    <div class="short-icon">
+
+                        <span><i class="fa-regular fa-thumbs-up" onclick="like8()" id="like8"></i></span>
+                        <p>6 N</p>
+
+
+                        <span><i class="fa-regular fa-thumbs-up fa-rotate-180" onclick="dislike8()"
+                                id="dislike8"></i></span>
+                        <p>Không <br>thích</p>
+
+
+                        <span><img src="/images/messages.png" alt=""></span>
+                        <p>201</p>
+
+
+                        <span><img src="/images/share.png" alt=""></span>
+                        <p>Chia sẻ</p>
+
+                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="stories">
+                    <a href="" class="short-video"><iframe src="https://youtube.com/embed/w2xE15RFsGs?feature=share"
+                            frameborder="0" height="640" width="350"></iframe></a>
+                    <div class="short-icon">
+
+                        <span><i class="fa-regular fa-thumbs-up" onclick="like9()" id="like9"></i></span>
+                        <p>6 N</p>
+
+
+                        <span><i class="fa-regular fa-thumbs-up fa-rotate-180" onclick="dislike9()"
+                                id="dislike9"></i></span>
+                        <p>Không <br>thích</p>
+
+
+                        <span><img src="/images/messages.png" alt=""></span>
+                        <p>201</p>
+
+
+                        <span><img src="/images/share.png" alt=""></span>
+                        <p>Chia sẻ</p>
+
+                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="stories">
+                    <a href="" class="short-video"><iframe src="https://youtube.com/embed/wA-F3j9QvZM?feature=share"
+                            frameborder="0" height="640" width="350"></iframe></a>
+                    <div class="short-icon">
+
+                        <span><i class="fa-regular fa-thumbs-up" onclick="like0()" id="like0"></i></span>
+                        <p>6 N</p>
+
+
+                        <span><i class="fa-regular fa-thumbs-up fa-rotate-180" onclick="dislike0()"
+                                id="dislike0"></i></span>
+                        <p>Không <br>thích</p>
+
+
+                        <span><img src="/images/messages.png" alt=""></span>
+                        <p>201</p>
+
+
+                        <span><img src="/images/share.png" alt=""></span>
+                        <p>Chia sẻ</p>
+
+                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                        <p></p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

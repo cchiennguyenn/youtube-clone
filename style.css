@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+img{
+    cursor: pointer;
+}
+
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    padding: 8px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 50px;
+    background-color: #fff;
+}
+.nav-phai img{
+    width: 25px;
+    margin-right: 25px;
+}
+.nav-phai .user-icon{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 0;
+}
+.nav-trai .menu-icon{
+    width: 22px;
+    margin-right: 25px;
+}
+.nav-trai .logo{
+    width: 130px;
+}
+.nav-giua .mic-icon{
+    width: 16px;
+}
+.nav-giua .search-box{
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 25px; 
+}
+.nav-giua .search-box input{
+    width: 400px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+.nav-giua .search-box img{
+    width: 15px;
+}
+.nav-phai button{
+    border: 1px solid blue;
+    background: #fff;
+    color: blue;
+    padding: 8px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.mic-icon {
+    cursor: pointer;
+}
+
+.mic-icon.active {
+    filter: brightness(1.2); /* Điều chỉnh độ sáng */
+    padding: 20px;
+    background-color: #cfaee8;
+}
+
+
+/* -- sidebar --*/
+.sidebar{
+    width: 16%; /*  */
+    height: 100vh; /*  */
+    position: fixed; /*  */
+    top: 0; /*  */
+    padding-left: 1%; /*  */
+    padding-top: 60px; /* Khoảng cách trên */
+    overflow-x: hidden; /* Thanh cuộn sidebar */
+}
+
+.sidebar hr{
+    border: 0; /* border = 0 bỏ */
+    height: 1px; /* chiều cao 1px */
+    background: #ccc; /* Màu đường kẻ hr */
+    width: 85%; 
+    margin-top: 10px;
+}
+.sidebar p{
+    font-size: 14px;
+}
+
+/* Chrome, Edge, Safari và Opera hỗ trợ phần tử giả 
+    không chuẩn ::-webkit-scrollbar, cho phép chúng 
+    tôi sửa đổi giao diện thanh cuộn của trình duyệt. */
+/* chiều rộng */
+.sidebar::-webkit-scrollbar {
+    width: 8px; 
+}
+
+/* rãnh (thanh tiến trình) của thanh cuộn "track" */
+.sidebar::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* tay cầm cuộn có thể kéo được "thumb" */
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 4px;
+}
+
+/* khi trỏ chuột thanh cuộn */
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* .shortcut-link{
+} */
+
+.shortcut-link a img{
+    width: 20px; /* chiều rộng */
+    margin-right: 20px; /* Khoảng cách bên trái */
+}
+
+.shortcut-link a{
+    display: flex; /* chế độ hiển thị nằm trên 1 dòng */
+    align-items: center; /* vị trí giữa */
+    width: fit-content; /* thanh sidebar co giãn khi kích thước browser thay đổi */
+    flex-wrap: wrap;
+    padding: 10px;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.shortcut-link a:hover{    
+    background-color: #c1c0c0;
+    width: 90%;
+    border-radius: 2px;
+    color: red; /* đổi màu khi trỏ chuột */
+}
+
+.shortcut-link a:first-child{
+    color: #ed3833; /* đổi màu khi trỏ chuột vào phần tử đầu tiên */
+}
+
+/*--thanh đăng nhập--*/
+
+
+/*--đăng nhập góc phải--*/
+#sign-up button{
+    border: 1px solid blue;
+    background: #fff;
+    color: blue;
+    padding: 8px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#sign-up p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #5a5a5a;
+    font-size: 15px;
+}
+
+.service-dichvu a{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    flex-wrap: wrap;
+    padding: 10px;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.service-dichvu h3{
+    font-size: 0.9rem;
+    color: #3b3b3b;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-left: -8px;
+}
+
+.service-dichvu a img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.service-dichvu a:hover{
+    background-color: #c1c0c0;
+    width: 90%;
+    border-radius: 2px;
+    color: red; /* đổi màu khi trỏ chuột */
+}
+
+.small-sidebar{
+    width: 5%;
+}
+
+.small-sidebar p{
+    display: none;
+}
+
+.small-sidebar button{
+    display: none;
+}
+
+.small-sidebar a:hover{
+    width: 68%;
+    border-radius: 100%;
+    
+    
+}
+
+.small-sidebar h3{
+    display: none;
+}
+
+.small-sidebar hr{
+    width: 70%;
+    margin-bottom: 2px;
+}
+
+.small-sidebar .s-u{
+    display: none;
+}
+
+
+/*-- Trang chủ--*/
+.container{
+    background: #f9f9f9;
+    padding-left: 17%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.large-container{
+    padding-left: 7%;
+}
+
+.banner{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.banner img{
+    border-radius: 8px;
+}
+
+.img-banner{
+    width: 100%;
+    height: 200px;
+}
+
+.close-banner{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    height: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+.list-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 16px;
+    grid-auto-rows: 250px;
+    margin-top: 15px;
+}
+
+.vid-list .thumbnail{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.vid-list .flex-div{
+    align-items: flex-start;
+    margin-top: 7px;
+}
+
+.vid-list .flex-div img{
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.vid-info{
+    color: #5a5a5a;
+    font-size: 13px; 
+}
+
+.vid-info a{
+    color: #000;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/*--giao diện điện thoại-- dùng truy vấn media */
+@media (max-width: 900px){
+    .flex-div .logo{
+        width: 70;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .nav-phai button{
+        font-size: 10;
+        padding: 5px 10px;
+    }
+    .sidebar{
+        display: none;
+    }
+
+    .container, .large-container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .nav-phai img{
+        display: none;
+    }
+
+    .nav-phai .user-icon{
+        display: block;
+        width: 30px;
+    }
+
+    .nav-giua .search-box input{
+        width: 100px;
+    }
+
+    .nav-giua .mic-icon{
+        display: none;
+    }
+
+    .logo{
+        width: 90px;
+    }
+
+    .list-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-column-gap: 16px;
+        grid-auto-rows: 270px;
+        margin-top: 15px;
+    }
+}

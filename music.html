@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Music</title>
+    <link rel="shortcut icon" href="/images/YouTubeMusic_Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="music.css">
+</head>
+<script>
+    function toggleSearch() {
+        var searchButton = document.getElementById("searchButton");
+        var searchBar = document.getElementById("searchBar");
+
+        if (searchBar.style.display === "none") {
+            searchBar.style.display = "flex";
+        } else {
+            searchBar.style.display = "none";
+        }
+    }
+
+    document.addEventListener("click", function (event) {
+        var searchButton = document.getElementById("searchButton");
+        var searchBar = document.getElementById("searchBar");
+
+        if (!searchButton.contains(event.target) && !searchBar.contains(event.target)) {
+            searchBar.style.display = "none";
+        }
+    });
+</script>
+
+<body>
+    <nav>
+        <div class="nav-trai">
+            <a href="#">
+                <img height="24" src="images/YT_Music.svg.png" alt="" class="logo">
+            </a>
+        </div>
+        <div class="nav-giua">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Khám Phá</a></li>
+                    <li><a href="#">Thư Viện</a></li>
+                </ul>
+            </div>
+            <div class="search-form">
+                <button id="searchButton" onclick="toggleSearch()">
+                    <img id="myImg" src="img_music/search.png" alt="">
+                    <p>Tìm</p>
+                </button>
+                <div id="searchBar" class="search-bar">
+                    <img src="img_music/left-arrow.png" alt="">
+                    <input type="text" placeholder="Tìm">
+                </div>
+            </div>
+        </div>
+        <div class="nav-phai">
+            <div class="chromecast">
+                <img src="img_music/chromecast.png" alt="chromecast">
+            </div>
+            <div class="user-img">
+                <img src="/images/Jack.png" alt="user-img">
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="main-list">
+            <a href="">
+                <p>Thư giãn</p>
+            </a>
+            <a href="">
+                <p>Nạp Năng Lượng</p>
+            </a>
+            <a href="">
+                <p>Tập Thể Dục</p>
+            </a>
+            <a href="">
+                <p>Đi Làm</p>
+            </a>
+            <a href="">
+                <p>Tập Trung</p>
+            </a>
+        </div>
+        <div class="my-list">
+            <div class="user-logo">
+                <div class="logo-user">
+                    <img src="/img_music/studio_square_thumbnail.jpg" alt="user-logo">
+                </div>
+                <div class="between">
+                    <div class="user">
+                        <div class="name-user">
+                            <p>MIN DO OFFICIAL (민도)</p>
+                            <a href="">
+                                <h2>Nghe lại</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nextto">
+                        <div class="listen-again">
+                            <a href="">
+                                <p>Xem thêm</p>
+                            </a>
+                        </div>
+                        <button class="prev-button">&#60;</button>
+                        <button class="next-button">&#62;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="audio-list">
+                <div class="audio-music">
+                    <a href="#">
+                        <img src="/img_music/lexieliu.jpg" alt="" class="audio-img">
+                        <img src="/img_music/play-button.png" alt="" class="audio-button">
+                    </a>
+                    <h3>Bad Dream</h3>
+                    <p>Bài hát &bull; <a href="">Lexie Liu</a></p>
+                </div>
+                <div class="audio-music">
+                    <a href="#">
+                        <img src="/img_music/OoOo.jpg" alt="" class="audio-img">
+                        <img src="/img_music/play-button.png" alt="" class="audio-button">
+                    </a>
+                    <h3>Shower</h3>
+                    <p>Bài hát &bull; <a href="">ooOo</a></p>
+                </div>
+                <div class="audio-music">
+                    <a href="#">
+                        <img src="/img_music/Adanna-Duru.jpg" alt="" class="audio-img">
+                        <img src="/img_music/play-button.png" alt="" class="audio-button">
+                    </a>
+                    <h3>ur a bitch</h3>
+                    <p>Bài hát &bull; <a href="">Adanna Duru</a></p>
+                </div>
+                <div class="audio-music">
+                    <a href="#">
+                        <img src="/img_music/ArianaGrande.jpg" alt="" class="audio-img">
+                        <img src="/img_music/play-button.png" alt="" class="audio-button">
+                    </a>
+                    <h3>motive</h3>
+                    <p>Bài hát &bull; <a href="">Ariana Grande</a></p>
+                </div>
+                <div class="audio-music">
+                    <a href="#">
+                        <img src="/img_music/billieeilish.jpg" alt="" class="audio-img">
+                        <img src="/img_music/play-button.png" alt="" class="audio-button">
+                    </a>
+                    <h3>CopyCat</h3>
+                    <p>Bài hát &bull; <a href="">Billie Eilish</a></p>
+                </div>
+                <div class="audio-music">
+                    <a href="#">
+                        <img src="/img_music/Ashnikko.jpg" alt="" class="audio-img">
+                        <img src="/img_music/play-button.png" alt="" class="audio-button">
+                    </a>
+                    <h3>WEEDKILLER</h3>
+                    <p>Bài hát &bull; <a href="">Ashnikko</a></p>
+                </div>
+                <div class="audio-music">
+                    <a href="#">
+                        <img src="/img_music/jisoo.jpg" alt="" class="audio-img">
+                        <img src="/img_music/play-button.png" alt="" class="audio-button">
+                    </a>
+                    <h3>Flowers</h3>
+                    <p>Bài hát &bull; <a href="">Jisoo</a></p>
+                </div>
+                <div class="audio-music">
+                    <a href="#">
+                        <img src="/img_music/lexieliu.jpg" alt="" class="audio-img">
+                        <img src="/img_music/play-button.png" alt="" class="audio-button">
+                    </a>
+                    <h3>ur a bitch</h3>
+                    <p>Bài hát &bull; <a href="">Adanna Duru</a></p>
+                </div>
+                <div class="audio-music">
+                    <a href="#">
+                        <img src="/img_music/lexieliu.jpg" alt="" class="audio-img">
+                        <img src="/img_music/play-button.png" alt="" class="audio-button">
+                    </a>
+                    <h3>ur a bitch</h3>
+                    <p>Bài hát &bull; <a href="">Adanna Duru</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="trendding-list">
+            <div class="title-trendding">
+                <h1>Đang Thịnh Hành</h1>
+            </div>
+            <div class="trendding-container">
+                <div class="trendding-music">
+                    <a href="#">
+                        <img src="/img_music/Pop-Hist.jpg" alt="" class="audio-img">
+                    </a>
+                    <h3><a href="">The Hit List</a></h3>
+                    <p>Peso Pluma, The Weeknd, Taylor Swift, Sam Smith</p>
+                </div>
+                <div class="trendding-music">
+                    <a href="#">
+                        <img src="/img_music/radioplaylist-melanie.jpg" alt="" class="audio-img">
+                    </a>
+                    <h3><a href="">The Hit List</a></h3>
+                    <p>Peso Pluma, The Weeknd, Taylor Swift, Sam Smith</p>
+                </div>
+                <div class="trendding-music">
+                    <a href="#">
+                        <img src="/img_music/Poprebels.jpg" alt="" class="audio-img">
+                    </a>
+                    <h3><a href="">The Hit List</a></h3>
+                    <p>Peso Pluma, The Weeknd, Taylor Swift, Sam Smith</p>
+                </div>
+                <div class="trendding-music">
+                    <a href="#">
+                        <img src="/img_music/The-list-Hist.jpg" alt="" class="audio-img">
+                    </a>
+                    <h3><a href="">The Hit List</a></h3>
+                    <p>Peso Pluma, The Weeknd, Taylor Swift, Sam Smith</p>
+                </div>
+                <div class="trendding-music">
+                    <a href="#">
+                        <img src="/img_music/taketwo.jpg" alt="" class="audio-img">
+                    </a>
+                    <h3><a href="">The Hit List</a></h3>
+                    <p>Peso Pluma, The Weeknd, Taylor Swift, Sam Smith</p>
+                </div>
+                <div class="trendding-music">
+                    <a href="#">
+                        <img src="/img_music/Poprebels.jpg" alt="" class="audio-img">
+                    </a>
+                    <h3><a href="">The Hit List</a></h3>
+                    <p>Peso Pluma, The Weeknd, Taylor Swift, Sam Smith</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="title-songs">
+            <h1>Đang Thịnh Hành</h1>
+        </div>
+        <div class="trendding-songs">
+            <div class="songs-container">
+                <div class="song-tredding">
+                    <div class="img-songs">
+                        <a href="">
+                            <img src="/img_music/idol.jpg" alt="">
+                            <p> &bull; 1</p>
+                        </a>
+                    </div>
+                    <div class="name-song">
+                        <a href="#">
+                            <h4>La Bebe (remix)</h4>
+                        </a>
+                        <p>Bài hát &bull; <a href="">Yng Lvcas</a> <a href="">Yng Lvcas</a>, <a href="">Yng Lvcas</a></p>
+                    </div>
+                </div>
+                <div class="song-tredding">
+                    <div class="img-songs">
+                        <a href="">
+                            <img src="/img_music/DojaCat.jpg" alt="">
+                            <p> &bull; 2</p>
+                        </a>
+                    </div>
+                    <div class="name-song">
+                        <a href="#">
+                            <h4>Attention</h4>
+                        </a>
+                        <p>Bài hát &bull; <a href="">Doja Cat</a></p>
+                    </div>
+                </div>
+                <div class="song-tredding">
+                    <div class="img-songs">
+                        <a href="">
+                            <img src="/img_music/jisoo.jpg" alt="">
+                            <p> &bull; 3</p>
+                        </a>
+                    </div>
+                    <div class="name-song">
+                        <a href="#">
+                            <h4>Flowers</h4>
+                        </a>
+                        <p>Bài hát &bull; <a href="">Jisoo</a></p>
+                    </div>
+                </div>
+                <div class="song-tredding">
+                    <div class="img-songs">
+                        <a href="">
+                            <img src="/img_music/BellaPoarch.jpg" alt="">
+                            <p> &bull; 4</p>
+                        </a>
+                    </div>
+                    <div class="name-song">
+                        <a href="#">
+                            <h4>Living Hell</h4>
+                        </a>
+                        <p>Bài hát &bull; <a href="">Bella Poarch</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="songs-container">
+                <div class="song-tredding">
+                    <div class="img-songs">
+                        <a href="">
+                            <img src="/img_music/cupid.jpg" alt="">
+                            <p> &bull; 5</p>
+                        </a>
+                    </div>
+                    <div class="name-song">
+                        <a href="#">
+                            <h4>La Bebe (remix)</h4>
+                        </a>
+                        <p>Bài hát &bull; <a href="">Yng Lvcas</a> <a href="">Yng Lvcas</a>, <a href="">Yng Lvcas</a></p>
+                    </div>
+                </div>
+                <div class="song-tredding">
+                    <div class="img-songs">
+                        <a href="">
+                            <img src="/img_music/k-pop.jpg" alt="">
+                            <p> &bull; 6</p>
+                        </a>
+                    </div>
+                    <div class="name-song">
+                        <a href="#">
+                            <h4>Attention</h4>
+                        </a>
+                        <p>Bài hát &bull; <a href="">Doja Cat</a></p>
+                    </div>
+                </div>
+                <div class="song-tredding">
+                    <div class="img-songs">
+                        <a href="">
+                            <img src="/img_music/Lexie-Liu.jpg" alt="">
+                            <p> &bull; 7</p>
+                        </a>
+                    </div>
+                    <div class="name-song">
+                        <a href="#">
+                            <h4>Flowers</h4>
+                        </a>
+                        <p>Bài hát &bull; <a href="">Jisoo</a></p>
+                    </div>
+                </div>
+                <div class="song-tredding">
+                    <div class="img-songs">
+                        <a href="">
+                            <img src="/img_music/DojaCat.jpg" alt="">
+                            <p> &bull; 8</p>
+                        </a>
+                    </div>
+                    <div class="name-song">
+                        <a href="#">
+                            <h4>Living Hell</h4>
+                        </a>
+                        <p>Bài hát &bull; <a href="">Bella Poarch</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="songs-container">
+                <div class="song-tredding">
+                    <div class="img-songs">
+                        <a href="">
+                            <img src="/img_music/+`Vibes`+.jpg" alt="">
+                            <p> &bull; 9</p>
+                        </a>
+                    </div>
+                    <div class="name-song">
+                        <a href="#">
+                            <h4>La Bebe (remix)</h4>
+                        </a>
+                        <p>Bài hát &bull; <a href="">Yng Lvcas</a> <a href="">Yng Lvcas</a>, <a href="">Yng Lvcas</a></p>
+                    </div>
+                </div>
+                <div class="song-tredding">
+                    <div class="img-songs">
+                        <a href="">
+                            <img src="/img_music/ArianaGrande.jpg" alt="">
+                            <p> &bull; 10</p>
+                        </a>
+                    </div>
+                    <div class="name-song">
+                        <a href="#">
+                            <h4>Attention</h4>
+                        </a>
+                        <p>Bài hát &bull; <a href="">Doja Cat</a></p>
+                    </div>
+                </div>
+                <div class="song-tredding">
+                    <div class="img-songs">
+                        <a href="">
+                            <img src="/img_music/Adanna-Duru.jpg" alt="">
+                            <p> &bull; 11</p>
+                        </a>
+                    </div>
+                    <div class="name-song">
+                        <a href="#">
+                            <h4>Flowers</h4>
+                        </a>
+                        <p>Bài hát &bull; <a href="">Jisoo</a></p>
+                    </div>
+                </div>
+                <div class="song-tredding">
+                    <div class="img-songs">
+                        <a href="">
+                            <img src="/img_music/Beat_on.jpg" alt="">
+                            <p> &bull; 12</p>
+                        </a>
+                    </div>
+                    <div class="name-song">
+                        <a href="#">
+                            <h4>Living Hell</h4>
+                        </a>
+                        <p>Bài hát &bull; <a href="">Bella Poarch</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
